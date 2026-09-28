@@ -15,8 +15,8 @@ const register = async (req, res) => {
   }
 
   // hash the password
-  const salt = await bcrypt.genSalt(10);
-  const hashedPassword = await bcrypt.hash(password, salt);
+  // const salt = await bcrypt.genSalt(10);
+  // const hashedPassword = await bcrypt.hash(password, salt);
 
   // Create new user
   const user = await prisma.user.create({
